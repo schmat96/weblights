@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="libaries/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/main.css" >
-<title>Page Title</title>
+  <link rel="stylesheet" href="libaries/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+  <script src="libaries/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" >
+  <link rel="stylesheet" href="css/omg.css" >
+  <title>weblights</title>
+
 </head>
 <body>
 
@@ -19,16 +21,91 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#">Videos</a>
-	  <a class="nav-item nav-link" href="https://www.grpstar.com/de/">Vorlage</a>
+      <a class="nav-item nav-link" href="https://www.grpstar.com/de/">Vorlage</a>
     </div>
   </div>
 </nav>
-<div class="navbar-added"></div>
-<div class="curved-div-down"></div>
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kolm%C3%A5rden_delfin.JPG" class="img-fluid" alt="Responsive image">
-<div class="curved-div"></div>
+<div class="grey_balken_stretch_unten">
+</div>
+<div class="content">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kolm%C3%A5rden_delfin.JPG" style="display: none" class="img-fluid show0" alt="Responsive image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Koala-ag1.jpg" class="img-fluid show1" alt="Responsive image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Suricates%2C_Namibia-2.jpg" class="img-fluid show2" alt="Responsive image">
+</div>
+<div class="grey_balken_stretch_oben"></div>
+<div class="grey_balken_stretch">
+  <div class="beschreibung show0">
+    <p><strong>Dies ist eine Beschreibung zum Foto 1</strong></p>
+  <hr>
+  <p>Alles klar bei dir?</p>
+  </div>
+
+  <div class="beschreibung show1">
+    <p><strong>Dies ist eine Beschreibung zum Foto 2</strong></p>
+  <hr>
+  <p>Alles klar bei dir?</p>
+  </div>
+
+  <div class="beschreibung show2">
+    <p><strong>Dies ist eine Beschreibung zum Foto 3</strong></p>
+  <hr>
+  <p>Alles klar bei dir?</p>
+  </div>
+
+</div>
+<div class="grey_balken_stretch_unten second"></div>
+
+<div class="grey_balken_stretch_unten">
+</div>
+<div class="content">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Koala-ag1.jpg" style="display: none" class="img-fluid show0" alt="Responsive image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Suricates%2C_Namibia-2.jpg" class="img-fluid show1" alt="Responsive image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Tigerramki.jpg" class="img-fluid show2" alt="Responsive image">
+</div>
+<div class="grey_balken_stretch_oben"></div>
+<div class="grey_balken_stretch">
+  <p><strong>Dies ist eine Beschreibung zum Foto</strong></p>
+  <hr>
+  <p>Alles klar bei dir?</p>
+</div>
+<div class="grey_balken_stretch_unten"></div>
 
 
 
 </body>
+
+<script>
+
+
+
+    (function($) {
+
+        let current = 1;
+        let mxImages = 3;
+        let max = function() {
+
+            $(".show"+((current) % mxImages)).addClass( "showSuper" );
+            for (let i = 1; i < mxImages; i++) {
+                let mod = ((current + i) % mxImages);
+                $(".show"+mod).removeClass( "showSuper" );
+                console.log(mod);
+            }
+            current = current+ 1;
+            setTimeout(function(){ max(); }, 3000);
+
+        }
+        max();
+
+
+
+
+    })( jQuery );
+
+
+
+</script>
+
 </html>
+
+
+

@@ -1,0 +1,91 @@
+.grey_balken_stretch_unten {
+  width: 100%;
+  height: 150px;
+  background: url("../img/grey_down.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 50;
+  position: relative;
+  margin: -1px auto;
+}
+
+body {
+  background-color: #343a40;
+}
+
+.beschreibung {
+  display: none;
+}
+
+.grey_balken_stretch_oben {
+  width: 100%;
+  height: 150px;
+  background: url("../img/grey_up.png");
+  background-position: bottom center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: 50;
+  position: relative;
+  margin: -1px auto;
+}
+
+.content {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: -150px auto;
+  background: #07143f;
+}
+
+.content img {
+  width: 60%;
+  margin: auto 20%;
+  height: auto;
+  max-height: 700px;
+  display: none;
+
+}
+
+
+.showSuper {
+  opacity: 1 !important;
+  display: inline !important;
+
+}
+
+
+#slider_stretch {
+  height: auto;
+}
+#slider_stretch {
+  height: 589px;
+  padding-top: 70px;
+  position: relative;
+  z-index: 20;
+  background: #303436;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+hr {
+  width: 70%;
+}
+
+.second {
+  margin-bottom: -100px;
+}
+
+.grey_balken_stretch {
+background-color: #343a40;
+width: 100%;
+position: relative;
+text-align: center;
+color: white;
+}
+
+.grey_balken_stretch p {
+margin: 0;
+
+}
