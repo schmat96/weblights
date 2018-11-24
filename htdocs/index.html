@@ -5,6 +5,9 @@
   <script src="libaries/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="css/main.css" >
   <link rel="stylesheet" href="css/omg.css" >
   <title>weblights</title>
@@ -21,85 +24,480 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#">Videos</a>
-      <a class="nav-item nav-link" href="https://www.grpstar.com/de/">Vorlage</a>
     </div>
   </div>
 </nav>
-<div class="grey_balken_stretch_unten">
+<div class="grey_balken_stretch_unten"></div>
+
 </div>
-<div class="content">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kolm%C3%A5rden_delfin.JPG" style="display: none" class="img-fluid show0" alt="Responsive image">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Koala-ag1.jpg" class="img-fluid show1" alt="Responsive image">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Suricates%2C_Namibia-2.jpg" class="img-fluid show2" alt="Responsive image">
+
+
+<div class="title">
+  <h1>
+    WebLights
+  </h1>
 </div>
+
 <div class="grey_balken_stretch_oben"></div>
-<div class="grey_balken_stretch">
+<div class="content author">
+  <h2>
+    Kevin
+  </h2>
+</div>
+
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-1" onclick="left()">
+      <span>
+        <i class="fas fa-arrow-left arrow"></i>
+      </span>
+
+    </div>
+    <div class="col-10">
+      <div class="hover show0">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kolm%C3%A5rden_delfin.JPG"  class="img-fluid " alt="Responsive image">
+        <div class="centeredText">
+          <h3>Bild Title 1</h3>
+        </div>
+      </div>
+      <div class="hover show1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Koala-ag1.jpg" class="img-fluid " alt="Responsive image">
+        <div class="centeredText">
+          <h3>Bild Title 2</h3>
+        </div>
+
+      </div>
+      <div class="hover show2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Suricates%2C_Namibia-2.jpg" class="img-fluid " alt="Responsive image">
+          <div class="centeredText ">
+            <h3>Bild Title 3</h3>
+          </div>
+
+      </div>
+    </div>
+    <div class="col-1">
+        <div class="row">
+          <i class="fas fa-arrow-right arrow" onclick="right()"></i>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-1"></div>
+    <div class="col-1 lowZIndex">
+      <i class="fas fa-circle show0" onclick="showCurrent(0)"></i>
+      <i class="far fa-circle show0" onclick="showCurrent(1)"></i>
+      <i class="far fa-circle show0" onclick="showCurrent(2)"></i>
+      <i class="far fa-circle show1" onclick="showCurrent(0)"></i>
+      <i class="fas fa-circle show1" onclick="showCurrent(1)"></i>
+      <i class="far fa-circle show1" onclick="showCurrent(2)"></i>
+      <i class="far fa-circle show2" onclick="showCurrent(0)"></i>
+      <i class="far fa-circle show2" onclick="showCurrent(1)"></i>
+      <i class="fas fa-circle show2" onclick="showCurrent(2)"></i>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+</div>
+
+  <div class="content module">
+    <div class="beschreibung show0">
+      <p><strong>Dies ist eine Beschreibung zum Foto 1</strong></p>
+      <hr>
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample2">
+        <div class="content card card-body">
+          <p>Informationen zum Bild wie Kamera etc</p>
+          <br>
+          <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+          <br>
+          <p>Informationen zum Bild wie Kamera etc</p>
+          <br>
+          <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+          <br>
+          <p>Informationen zum Bild wie Kamera etc</p>
+          <br>
+          <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+          <br>
+          <p>Informationen zum Bild wie Kamera etc</p>
+          <br>
+          <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+          <br>
+          <p>Informationen zum Bild wie Kamera etc</p>
+          <br>
+          <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+          <br>
+          <p>Informationen zum Bild wie Kamera etc</p>
+          <br>
+          <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+          <br>
+          <p>Informationen zum Bild wie Kamera etc</p>
+          <br>
+          <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="beschreibung show1">
+      <p><strong>Dies ist eine Beschreibung zum Foto 2</strong></p>
+      <hr>
+      <p>Alles klar bei dir?</p>
+    </div>
+
+    <div class="beschreibung show2">
+      <p><strong>Dies ist eine Beschreibung zum Foto 3</strong></p>
+      <hr>
+      <p>Alles klar bei dir?</p>
+    </div>
+  </div>
+</div>
+<div class="grey_balken_stretch_unten module"></div>
+
+<!-- --TOO EASY FIND WHERE TO DELETE IF CHANGES HAPPEN TO BASIC LAYOUT-- FROM HERE...
+       Dont forget to add class module to author, container and grey_balken_stretch_oben
+ -->
+
+<div class="grey_balken_stretch_oben module"></div>
+<div class="content author module">
+  <h2>
+    Kevin
+  </h2>
+</div>
+
+<div class="container module">
+  <div class="row align-items-center">
+    <div class="col-1" onclick="left()">
+      <span>
+        <i class="fas fa-arrow-left arrow"></i>
+      </span>
+
+    </div>
+    <div class="col-10">
+      <div class="hover show0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kolm%C3%A5rden_delfin.JPG"  class="img-fluid " alt="Responsive image">
+        <div class="centeredText">
+          <h3>Bild Title 1</h3>
+        </div>
+      </div>
+      <div class="hover show1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Koala-ag1.jpg" class="img-fluid " alt="Responsive image">
+        <div class="centeredText">
+          <h3>Bild Title 2</h3>
+        </div>
+
+      </div>
+      <div class="hover show2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Suricates%2C_Namibia-2.jpg" class="img-fluid " alt="Responsive image">
+        <div class="centeredText ">
+          <h3>Bild Title 3</h3>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="row">
+        <i class="fas fa-arrow-right arrow" onclick="right()"></i>
+      </div>
+      </span>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-1"></div>
+    <div class="col-1 lowZIndex">
+      <i class="fas fa-circle show0" onclick="showCurrent(0)"></i>
+      <i class="far fa-circle show0" onclick="showCurrent(1)"></i>
+      <i class="far fa-circle show0" onclick="showCurrent(2)"></i>
+      <i class="far fa-circle show1" onclick="showCurrent(0)"></i>
+      <i class="fas fa-circle show1" onclick="showCurrent(1)"></i>
+      <i class="far fa-circle show1" onclick="showCurrent(2)"></i>
+      <i class="far fa-circle show2" onclick="showCurrent(0)"></i>
+      <i class="far fa-circle show2" onclick="showCurrent(1)"></i>
+      <i class="fas fa-circle show2" onclick="showCurrent(2)"></i>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+</div>
+
+<div class="content module">
   <div class="beschreibung show0">
     <p><strong>Dies ist eine Beschreibung zum Foto 1</strong></p>
-  <hr>
-  <p>Alles klar bei dir?</p>
+    <hr>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="content card card-body">
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+      </div>
+    </div>
   </div>
 
   <div class="beschreibung show1">
     <p><strong>Dies ist eine Beschreibung zum Foto 2</strong></p>
-  <hr>
-  <p>Alles klar bei dir?</p>
+    <hr>
+    <p>Alles klar bei dir?</p>
   </div>
 
   <div class="beschreibung show2">
     <p><strong>Dies ist eine Beschreibung zum Foto 3</strong></p>
-  <hr>
-  <p>Alles klar bei dir?</p>
+    <hr>
+    <p>Alles klar bei dir?</p>
+  </div>
+</div>
+</div>
+<div class="grey_balken_stretch_unten module"></div>
+
+<div class="grey_balken_stretch_oben module"></div>
+<div class="content author module">
+  <h2>
+    Kevin
+  </h2>
+</div>
+
+<div class="container module">
+  <div class="row align-items-center">
+    <div class="col-1" onclick="left()">
+      <span>
+        <i class="fas fa-arrow-left arrow"></i>
+      </span>
+
+    </div>
+    <div class="col-10">
+      <div class="hover show0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Kolm%C3%A5rden_delfin.JPG"  class="img-fluid " alt="Responsive image">
+        <div class="centeredText">
+          <h3>Bild Title 1</h3>
+        </div>
+      </div>
+      <div class="hover show1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Koala-ag1.jpg" class="img-fluid " alt="Responsive image">
+        <div class="centeredText">
+          <h3>Bild Title 2</h3>
+        </div>
+
+      </div>
+      <div class="hover show2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Suricates%2C_Namibia-2.jpg" class="img-fluid " alt="Responsive image">
+        <div class="centeredText ">
+          <h3>Bild Title 3</h3>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="row">
+        <i class="fas fa-arrow-right arrow" onclick="right()"></i>
+      </div>
+      </span>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-1"></div>
+    <div class="col-1 lowZIndex">
+      <i class="fas fa-circle show0" onclick="showCurrent(0)"></i>
+      <i class="far fa-circle show0" onclick="showCurrent(1)"></i>
+      <i class="far fa-circle show0" onclick="showCurrent(2)"></i>
+      <i class="far fa-circle show1" onclick="showCurrent(0)"></i>
+      <i class="fas fa-circle show1" onclick="showCurrent(1)"></i>
+      <i class="far fa-circle show1" onclick="showCurrent(2)"></i>
+      <i class="far fa-circle show2" onclick="showCurrent(0)"></i>
+      <i class="far fa-circle show2" onclick="showCurrent(1)"></i>
+      <i class="fas fa-circle show2" onclick="showCurrent(2)"></i>
+    </div>
+    <div class="col-1"></div>
   </div>
 
 </div>
-<div class="grey_balken_stretch_unten second"></div>
 
-<div class="grey_balken_stretch_unten">
-</div>
-<div class="content">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Koala-ag1.jpg" style="display: none" class="img-fluid show0" alt="Responsive image">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Suricates%2C_Namibia-2.jpg" class="img-fluid show1" alt="Responsive image">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Tigerramki.jpg" class="img-fluid show2" alt="Responsive image">
-</div>
-<div class="grey_balken_stretch_oben"></div>
-<div class="grey_balken_stretch">
-  <p><strong>Dies ist eine Beschreibung zum Foto</strong></p>
-  <hr>
-  <p>Alles klar bei dir?</p>
-</div>
-<div class="grey_balken_stretch_unten"></div>
+<div class="content module">
+  <div class="beschreibung show0">
+    <p><strong>Dies ist eine Beschreibung zum Foto 1</strong></p>
+    <hr>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample3">
+      <div class="content card card-body">
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+        <p>Informationen zum Bild wie Kamera etc</p>
+        <br>
+        <p>Hier darf und sollte viel stehen darum machen wir CTRL-C CTRL-V</p>
+        <br>
+      </div>
+    </div>
+  </div>
 
+  <div class="beschreibung show1">
+    <p><strong>Dies ist eine Beschreibung zum Foto 2</strong></p>
+    <hr>
+    <p>Alles klar bei dir?</p>
+  </div>
 
+  <div class="beschreibung show2">
+    <p><strong>Dies ist eine Beschreibung zum Foto 3</strong></p>
+    <hr>
+    <p>Alles klar bei dir?</p>
+  </div>
+</div>
+</div>
+<div class="grey_balken_stretch_unten module"></div>
+
+<!-- ...TOO HERE --TOO EASY FIND WHERE TO DELETE IF CHANGES HAPPEN TO BASIC LAYOUT-- -->
 
 </body>
 
 <script>
 
+    jQuery(document).ready(function(){
+        jQuery(this).scrollTop(0);
+    });
 
-
-    (function($) {
-
-        let current = 1;
+        let current = -1;
         let mxImages = 3;
-        let max = function() {
-
-            $(".show"+((current) % mxImages)).addClass( "showSuper" );
-            for (let i = 1; i < mxImages; i++) {
-                let mod = ((current + i) % mxImages);
-                $(".show"+mod).removeClass( "showSuper" );
-                console.log(mod);
+        let dontBeMinus = function (number) {
+            if (number <= 0) {
+                return (Math.pow(Math.pow(number,2),0.5));
+            } else {
+                return number;
             }
-            current = current+ 1;
-            setTimeout(function(){ max(); }, 3000);
-
         }
-        max();
+
+        let showCurrent = function(number) {
+            current = number;
+            removeClasses();
+        }
+
+        let left = function() {
+            current = current + 1;
+            removeClasses();
+        }
+
+        let right = function() {
+            current = current - 1;
+            removeClasses();
+        }
+
+        let removeClasses = function() {
+            jQuery(".show"+(dontBeMinus(current + 1) % mxImages)).removeClass( "showSuper" );
+            jQuery(".show"+(dontBeMinus(current + 2) % mxImages)).removeClass( "showSuper" );
+            jQuery(".show"+(dontBeMinus(current) % mxImages)).addClass( "showSuper" );
+        }
+        left();
 
 
+        (function($) {
+
+            /**
+             * Copyright 2012, Digital Fusion
+             * Licensed under the MIT license.
+             * http://teamdf.com/jquery-plugins/license/
+             *
+             * @author Sam Sehnert
+             * @desc A small plugin that checks whether elements are within
+             *     the user visible viewport of a web browser.
+             *     only accounts for vertical position, not horizontal.
+             */
+
+            $.fn.visible = function(partial) {
+
+                var $t            = $(this),
+                    $w            = $(window),
+                    viewTop       = $w.scrollTop(),
+                    viewBottom    = viewTop + $w.height(),
+                    _top          = $t.offset().top,
+                    _bottom       = _top + $t.height(),
+                    compareTop    = partial === true ? _bottom : _top,
+                    compareBottom = partial === true ? _top : _bottom;
+
+                return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+            };
+
+        })(jQuery);
 
 
-    })( jQuery );
+        var win = $(window);
+        var allMods = $(".module");
+
+        // Already visible modules
+        allMods.each(function(i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+                el.addClass("already-visible");
+            }
+        });
+
+        win.scroll(function(event) {
+
+            allMods.each(function(i, el) {
+                var el = $(el);
+                if (el.visible(true)) {
+                    el.addClass("come-in");
+                }
+            });
+
+        });
+
 
 
 
