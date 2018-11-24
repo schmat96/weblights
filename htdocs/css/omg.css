@@ -120,9 +120,23 @@ hr {
   font-size: 10em;
 }
 
+.title .lensflare {
+  opacity: 0.0001;
+  display: inline;
+  transition: opacity 5s ease;
+}
+
+
+.title:hover .lensflare {
+  opacity: 1;
+
+  z-index: 10000;
+  transition: opacity 15s ease;
+}
+
 .come-in {
   transform: translateY(350px);
-  animation: come-in 1.5s ease forwards;
+  animation: come-in 0.1s ease forwards;
 }
 .come-in:nth-child(odd) {
   animation-duration: 0.6s; /* So they look staggered */
@@ -157,3 +171,56 @@ hr {
   margin: -1px auto;
 }
 
+.lensflare {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  display: inline;
+  z-index: 1;
+}
+
+.source-spread {
+  position: absolute;
+  background: radial-gradient(rgba(255,225,255,.05) 10%, rgba(255,225,255,.05) 30%, rgba(0,0,0,0) 60%);
+  border-radius: 50%;
+  width: 1000px;
+  height: 1000px;
+  margin-top: -1000px;
+  margin-left: -1000px;
+  top: 14%;
+  left: 14%;
+  z-index: 0;
+}
+
+.source {
+  position: absolute;
+  background: radial-gradient(
+          rgba(255,255,255,1) 0%,
+          rgba(243,206,205,.4) 35%,
+          rgba(88,88,88,.3) 60%,
+          rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  width: 800px;
+  height: 800px;
+  margin-top: -600px;
+  margin-left: -100px;
+  top: 14%;
+  left: 14%;
+  z-index: 2;
+}
+
+.source-beam {
+  position: absolute;
+  background: radial-gradient(
+          rgba(255,255,255,.3) 0%,
+          rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  width: 2200px;
+  height: 28px;
+  margin-top: -14px;
+  margin-left: -1100px;
+  top: 14%;
+  left: 14%;
+  z-index: 1;
+}
