@@ -205,9 +205,9 @@ hr {
           rgba(88,88,88,.3) 60%,
           rgba(0,0,0,0) 70%);
   border-radius: 50%;
-  width: 800px;
-  height: 800px;
-  margin-top: -600px;
+  width: 400px;
+  height: 400px;
+  margin-top: -400px;
   margin-left: -100px;
   top: 14%;
   left: 14%;
